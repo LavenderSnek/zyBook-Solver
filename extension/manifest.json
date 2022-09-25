@@ -12,8 +12,15 @@
     {
       "matches": ["https://learn.zybooks.com/zybook/*"],
       "js": [
+        "script/content-script-add.js",
         "script/content-script.js"
       ]
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": ["script/solvers.js"],
+      "matches": ["<all_urls>"]
     }
   ]
 }

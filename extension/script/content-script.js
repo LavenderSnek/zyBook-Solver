@@ -4,7 +4,8 @@ function getAllContentResourcePayloads() {
 }
 
 function generateSolvers() {
-    let payloads = getAllContentResourcePayloads()
+    addScriptIfNotAdded("script/solvers.js");
+    let payloads = getAllContentResourcePayloads();
 
     for (let i = 0; i < payloads.length; i++) {
         let payload = payloads.item(i);
@@ -15,7 +16,11 @@ function generateSolvers() {
 
         let btn = document.createElement("button");
 
-        //todo: add evt listener
+        if (payload.classList.contains("multiple-choice-payload")) {
+            btn.setAttribute("onclick", `solveMultipleChoiceBlock(document.getElementById('${payload.getAttribute('id')}'))`);
+        } else {
+            continue;
+        }
 
         btn.innerHTML = "Solve Section";
         btn.className = "zbs-solver"
