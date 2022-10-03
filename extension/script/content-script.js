@@ -18,6 +18,8 @@ function generateSolvers() {
 
         if (payload.classList.contains("multiple-choice-payload")) {
             btn.setAttribute("onclick", `solveMultipleChoiceBlock(document.getElementById('${payload.getAttribute('id')}'))`);
+        } else if (payload.classList.contains("short-answer-payload")) {
+            btn.setAttribute("onclick", `solveShortAnswerBlock(document.getElementById('${payload.getAttribute('id')}'))`);
         } else {
             continue;
         }
