@@ -25,5 +25,10 @@
       "resources": ["script/solvers.js"],
       "matches": ["<all_urls>"]
     }
-  ]
+  ],
+  "commands": {
+    "_execute_action": {
+      "description" : "Start the extension"
+    }
+  }
 }
