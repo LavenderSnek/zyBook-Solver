@@ -3,6 +3,9 @@
   "version": "1.0",
   "manifest_version": 3,
   "description": "Solves some zyBook questions",
+  "icons": {
+    "128": "icon.png"
+  },
   "permissions": ["activeTab", "tabs"],
   "action": {
     "default_title": "zyBook Solver",
