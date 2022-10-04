@@ -24,8 +24,8 @@ function generateSolvers() {
             continue;
         }
 
-        btn.innerHTML = "Solve Section";
-        btn.className = "zbs-solver"
+        btn.innerHTML = "Skip Section";
+        btn.className = "zbs-solver zb-button primary raised"
         let btnParent = document.createElement("div");
         btnParent.className = "zbs-solver-container"
         btnParent.appendChild(btn);

@@ -1,0 +1,18 @@
+
+div.zbs-solver-container {
+    margin-bottom: 16px;
+    margin-right: 12px;
+    height: auto;
+    text-align: center;
+}
+
+button.zbs-solver {
+    background-color: #45638f!important;
+    width: 100%;
+    display: inline-block;
+}
+
+button.zbs-solver:hover {
+    background-color: #48754d!important;
+    color: #8d9d8d!important;
+}
