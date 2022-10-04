@@ -10,7 +10,7 @@ function generateSolvers() {
     for (let i = 0; i < payloads.length; i++) {
         let payload = payloads.item(i);
 
-        if (payload.querySelector("div.zbs-solver-container")) {
+        if (payload.parentElement.querySelector("div.zbs-solver-container")) {
             continue; // already generated
         }
 
